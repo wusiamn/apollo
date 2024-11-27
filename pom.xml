@@ -92,6 +92,7 @@
 		<maven-war-plugin.version>3.3.2</maven-war-plugin.version>
 		<maven-source-plugin.version>3.2.1</maven-source-plugin.version>
 		<maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+		<opengauss.version>5.1.0-og</opengauss.version>
 	</properties>
 
 	<modules>
@@ -271,6 +272,11 @@
 				<groupId>com.sun.mail</groupId>
 				<artifactId>javax.mail</artifactId>
 				<version>${javax.mail.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.opengauss</groupId>
+				<artifactId>opengauss-jdbc</artifactId>
+				<version>${opengauss.version}</version>
 			</dependency>
 			<!-- JDK 11+ -->
 			<dependency>
